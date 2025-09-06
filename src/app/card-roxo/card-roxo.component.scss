@@ -1,39 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+// Variáveis
+$purple: #7c3aed;
+$purple-hover: #6d28d9;
 
-// Variáveis de tema
 $bg-light: #ffffff;
-$text-light: #f05310;
-$muted-light: #6b7280;
+$bg-dark: #c89ce8;
 
-$bg-dark: #f45309;
-$text-dark: #f3f4f6;
-$muted-dark: #9ca3af;
-
-$primary: #2563eb;
-$primary-hover: #1d4ed8;
+$text-light: #f3f4f6;
+$muted-light: #d1c4e9;
 
 $shadow-light: 0 6px 20px rgba(0, 0, 0, 0.1);
 $shadow-dark: 0 6px 20px rgba(0, 0, 0, 0.4);
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: #f9fafb;
-  color: $text-light;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-
-  // Modo escuro automático
-  @media (prefers-color-scheme: dark) {
-    background: $bg-dark;
-    color: $text-dark;
-  }
-}
-
-.card {
-  background: $bg-light;
+.card-roxo {
+  background: lighten($purple, 42%);
   border-radius: 16px;
+  border: 2px solid $purple;
   box-shadow: $shadow-light;
   padding: 24px;
   text-align: center;
@@ -44,10 +25,9 @@ body {
 
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
   }
 
-  // Itens internos
   &__item {
     padding: 8px 0;
   }
@@ -58,18 +38,18 @@ body {
     color: $muted-light;
 
     b {
-      color: $text-light;
+      color: $purple;
     }
   }
 
   &__price {
     font-size: 2rem;
     font-weight: 700;
-    color: $primary;
+    color: $purple;
   }
 
   &__button {
-    background: $primary;
+    background: $purple;
     color: #fff;
     padding: 12px 16px;
     border-radius: 12px;
@@ -78,7 +58,7 @@ body {
     transition: background 0.2s ease, transform 0.1s ease;
 
     &:hover {
-      background: $primary-hover;
+      background: $purple-hover;
     }
 
     &:active {
@@ -86,17 +66,21 @@ body {
     }
   }
 
-  // Modo escuro
+  // Dark mode
   @media (prefers-color-scheme: dark) {
     background: $bg-dark;
     box-shadow: $shadow-dark;
 
     &__plan {
-      color: $muted-dark;
+      color: $muted-light;
 
       b {
-        color: $text-dark;
+        color: $purple;
       }
+    }
+
+    &__price {
+      color: $purple;
     }
   }
 }
