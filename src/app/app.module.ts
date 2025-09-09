@@ -14,12 +14,13 @@ import { AppComponent } from './app.component';
 // Isso permite que todos os componentes exportados pelo CardsModule
 // fiquem disponíveis para uso dentro dos templates do AppModule
 import { CardsModule } from './cards/cards.module';
+import { InlineComponent } from './inline/inline.component';
 
 // Criamos o módulo raiz da aplicação (AppModule)
 // Este módulo é o ponto de entrada da aplicação Angular.
 @NgModule({
   // Aqui declaramos apenas o AppComponent, que é o componente principal
-  declarations: [AppComponent],
+  declarations: [AppComponent, InlineComponent],
 
   // Aqui importamos os módulos necessários para o funcionamento da aplicação
   imports: [
