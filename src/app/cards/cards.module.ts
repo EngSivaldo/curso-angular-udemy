@@ -10,6 +10,7 @@ import { CardComponent } from '../card/card.component';
 import { CardButtonComponent } from '../card-button/card-button.component';
 import { CardRoxoComponent } from '../card-roxo/card-roxo.component';
 import { CardRoxoButtonComponent } from '../card-roxo-button/card-roxo-button.component';
+import { CardButtonCancelComponent } from '../card-button-cancel/card-button-cancel.component';
 
 // Criamos o módulo "CardsModule"
 // Esse módulo serve para agrupar e organizar todos os componentes de "cards"
@@ -21,6 +22,7 @@ import { CardRoxoButtonComponent } from '../card-roxo-button/card-roxo-button.co
     CardButtonComponent,
     CardRoxoComponent,
     CardRoxoButtonComponent,
+    CardButtonCancelComponent,
   ],
   // Aqui importamos outros módulos necessários para que os componentes funcionem
   imports: [CommonModule],
