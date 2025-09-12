@@ -1,5 +1,11 @@
 // Variáveis
-$green: #3aed67;
+
+//importar variaveis de outro arquivo
+// @import "../..//styles/variables";
+@import "variables";
+
+// $green: #3aed67;
+
 $purple-hover: #6d28d9;
 
 $bg-light: #ffffff;
@@ -12,7 +18,7 @@ $shadow-light: 0 6px 20px rgba(0, 0, 0, 0.1);
 $shadow-dark: 0 6px 20px rgba(0, 0, 0, 0.4);
 
 div.card-cancel-button {
-  background: $green;
+  background: $secondary;
   color: #fff;
   padding: 12px 16px;
   border-radius: 12px;
