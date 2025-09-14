@@ -1,0 +1,13 @@
+// ============================================================
+// Exemplo didático (aula X):
+// Demonstração de como sobrescrever estilos globais no Angular
+// usando um arquivo SCSS separado e importado no styles.scss.
+//
+// ⚠️ Observação: o uso de "!important" deve ser evitado em
+// projetos reais, a menos que seja estritamente necessário.
+// ============================================================
+
+.card-cancel-button {
+  background-color: rgb(10, 248, 54) !important;
+  color: #f7f7f7 !important;
+}
