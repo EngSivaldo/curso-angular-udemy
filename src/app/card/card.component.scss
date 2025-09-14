@@ -82,3 +82,8 @@ body {
     }
   }
 }
+
+//como alterar propriedade do component filho a partir do compon pai
+::ng-deep .card-cancel-button {
+  background-color: #f8eb00 !important;
+}
