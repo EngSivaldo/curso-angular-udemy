@@ -11,6 +11,7 @@ import { CardButtonComponent } from '../card-button/card-button.component';
 import { CardRoxoComponent } from '../card-roxo/card-roxo.component';
 import { CardRoxoButtonComponent } from '../card-roxo-button/card-roxo-button.component';
 import { CardButtonCancelComponent } from '../card-button-cancel/card-button-cancel.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 // Criamos o módulo "CardsModule"
 // Esse módulo serve para agrupar e organizar todos os componentes de "cards"
@@ -25,7 +26,7 @@ import { CardButtonCancelComponent } from '../card-button-cancel/card-button-can
     CardButtonCancelComponent,
   ],
   // Aqui importamos outros módulos necessários para que os componentes funcionem
-  imports: [CommonModule],
+  imports: [CommonModule, MatSliderModule],
   // Aqui exportamos os componentes
   // Isso significa que qualquer outro módulo que importar o CardsModule
   // poderá usar diretamente <app-card>, <app-card-button>, <app-card-roxo>

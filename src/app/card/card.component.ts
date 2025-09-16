@@ -28,4 +28,10 @@ export class CardComponent {
       };
     }, 2000);
   }
+  // Função para formatar o valor do slider
+  sliderValue = 1.5;
+
+  formatLabel(value: number): string {
+    return value + '★';
+  }
 }

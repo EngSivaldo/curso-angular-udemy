@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 // Isso permite que todos os componentes exportados pelo CardsModule
 // fiquem disponíveis para uso dentro dos templates do AppModule
 import { CardsModule } from './cards/cards.module';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 // Criamos o módulo raiz da aplicação (AppModule)
 // Este módulo é o ponto de entrada da aplicação Angular.
@@ -29,7 +30,7 @@ import { CardsModule } from './cards/cards.module';
   ],
 
   // Serviços globais da aplicação podem ser registrados aqui
-  providers: [],
+  providers: [provideAnimationsAsync()],
 
   // Define qual componente será carregado primeiro ao iniciar a aplicação
   bootstrap: [AppComponent],

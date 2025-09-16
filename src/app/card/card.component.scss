@@ -82,3 +82,8 @@ body {
     }
   }
 }
+
+//fazendo alteracao na classe  .mdc-slider__track--active_fill de forma especifica
+:host ::ng-deep mat-slider .mdc-slider__track--active_fill {
+  border-color: yellow !important;
+}
