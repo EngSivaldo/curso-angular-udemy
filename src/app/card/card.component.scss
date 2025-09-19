@@ -83,6 +83,10 @@ body {
   }
 }
 
-.global {
-  background-color: greenyellow;
+// .emulated {
+//   background-color: rgb(47, 255, 64);
+// }
+
+::ng-deep .card-cancel-button {
+  background-color: rgb(47, 255, 64) !important;
 }
